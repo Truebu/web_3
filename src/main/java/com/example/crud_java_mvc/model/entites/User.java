@@ -1,9 +1,22 @@
 package com.example.crud_java_mvc.model.entites;
 
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class User {
 
+    @Id
     int id;
+
+    @Column
     int dni;
+
+    @Column
     String name;
 
     public User(int id, int dni, String name) {

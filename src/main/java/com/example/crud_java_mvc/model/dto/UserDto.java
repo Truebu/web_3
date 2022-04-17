@@ -41,7 +41,6 @@ public class UserDto implements CRUD {
 
     @Override
     public User getById(int id) {
-        ArrayList<User> list = new ArrayList<>();
         String sql = "select * from user where id = "+ id;
         try {
             con = cn.getConnection();
